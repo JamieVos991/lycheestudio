@@ -607,16 +607,25 @@ html.revealed footer {
     color: #fff;
     border: var(--border);
     box-shadow: 4px 4px 0 var(--color-ink);
-    font-size: 1.2rem;
-    font-weight: 800;
+    padding: 0;
     cursor: pointer;
     transition: transform 0.1s, box-shadow 0.1s;
+
+    svg {
+      display: block;
+      width: 1.4rem;
+      height: 1.4rem;
+    }
 
     &:hover {
       transform: translateY(calc(-50% - 2px)) translateX(-2px);
       box-shadow: 6px 6px 0 var(--color-ink);
     }
   }
+}
+
+#work-track:has(> li:only-child) ~ :is(#work-prev, #work-next) {
+  display: none;
 }
 
 #work-prev {

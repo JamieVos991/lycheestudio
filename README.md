@@ -29,8 +29,6 @@ Geen frameworks, geen onnodige dependencies. Alles is handgeschreven HTML, CSS e
 ├── en/
 │   └── index.html      # Engelstalige homepage
 ├── werk/               # Projectpagina's
-│   ├── luxcleaning.html
-│   ├── strakplan.html
 │   └── artquake.html
 ├── styles/
 │   ├── styleguide.css  # globale componenten

@@ -11,8 +11,6 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         en: resolve(__dirname, 'en/index.html'),
-        luxcleaning: resolve(__dirname, 'werk/luxcleaning.html'),
-        strakplan: resolve(__dirname, 'werk/strakplan.html'),
         artquake: resolve(__dirname, 'werk/artquake.html'),
       },
     },

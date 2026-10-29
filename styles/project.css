@@ -111,6 +111,16 @@ footer {
   font-size: 1.4rem;
   font-weight: 800;
   color: var(--color-ink);
+
+  a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+
+    &:hover {
+      text-decoration-thickness: 0.15em;
+    }
+  }
 }
 
 /* ── Body ── */
