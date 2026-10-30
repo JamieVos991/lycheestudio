@@ -1,0 +1,15 @@
+# Mail-API van lychees.studio: vervangt Formspree.
+# Live zetten: zie worker/README.md.
+name = "lychees-mail"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+AFZENDER = "hallo@lychees.studio" # eigen domein, geverifieerd in Resend
+ONTVANGER = "hallo@lychees.studio" # hier komen de berichten binnen
+
+# limiet tegen spam
+[[ratelimits]]
+name = "LIMIET_CONTACT"
+namespace_id = "2001"
+simple = { limit = 3, period = 60 }

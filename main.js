@@ -329,9 +329,11 @@ contactForm.addEventListener('submit', async (e) => {
     } else {
       const data = await res.json().catch(() => ({}));
       contactStatus.textContent = data?.errors?.[0]?.message ?? 'Er ging iets mis. Probeer het opnieuw.';
+      window.turnstile?.reset(); // een token werkt maar één keer
     }
   } catch {
     contactStatus.textContent = 'Er ging iets mis. Controleer je verbinding.';
+    window.turnstile?.reset();
   } finally {
     btn.disabled = false;
     btn.textContent = 'Verstuur';

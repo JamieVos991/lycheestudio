@@ -15,7 +15,7 @@ Portfolio en zakelijke website voor Lychees.studio een webdesignstudio gespecial
 | Styling | Vanilla CSS (CSS Nesting, custom properties) |
 | Deployment | Netlify (auto deploy via GitHub) |
 | Analytics | Plausible (privacy afirst, geen cookies) |
-| Formulieren | Formspree |
+| Formulieren | Cloudflare Worker + Resend (zie `worker/`) |
 
 Geen frameworks, geen onnodige dependencies. Alles is handgeschreven HTML, CSS en JavaScript.
 
