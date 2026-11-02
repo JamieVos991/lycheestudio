@@ -223,7 +223,12 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    max-width: 48rem;
+
+    @media (min-width: 900px) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      align-items: start;
+    }
   }
 
   li {
@@ -234,6 +239,20 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+
+    @media (min-width: 900px) {
+      &:nth-child(1) {
+        grid-column: 1 / 7;
+      }
+      &:nth-child(2) {
+        grid-column: 7 / 13;
+        margin-top: 5rem;
+      }
+      &:nth-child(3) {
+        grid-column: 3 / 9;
+        margin-top: -0.5rem;
+      }
+    }
   }
 
   blockquote p {
