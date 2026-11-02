@@ -12,6 +12,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         en: resolve(__dirname, 'en/index.html'),
         artquake: resolve(__dirname, 'werk/artquake.html'),
+        reconnectBalance: resolve(__dirname, 'werk/reconnect-balance.html'),
       },
     },
     target: 'es2020',

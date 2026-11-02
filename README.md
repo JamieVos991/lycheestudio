@@ -29,7 +29,8 @@ Geen frameworks, geen onnodige dependencies. Alles is handgeschreven HTML, CSS e
 ├── en/
 │   └── index.html      # Engelstalige homepage
 ├── werk/               # Projectpagina's
-│   └── artquake.html
+│   ├── artquake.html
+│   └── reconnect-balance.html
 ├── styles/
 │   ├── styleguide.css  # globale componenten
 │   ├── style.css       # Homepage specifieke stijlen
